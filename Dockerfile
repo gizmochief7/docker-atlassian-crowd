@@ -1,7 +1,7 @@
-FROM jleight/atlassian-base:latest
-MAINTAINER Jonathon Leight <jonathon.leight@jleight.com>
+FROM gizmochief7/atlassian-base:latest
+MAINTAINER Justin Ayers <gizmochief7@gmail.com>
 
-ENV APP_VERSION 2.8.3
+ENV APP_VERSION 2.11.0
 ENV APP_BASEURL ${ATL_BASEURL}/crowd/downloads/binary
 ENV APP_PACKAGE atlassian-crowd-${APP_VERSION}.tar.gz
 ENV APP_URL     ${APP_BASEURL}/${APP_PACKAGE}

@@ -13,7 +13,7 @@ forwarding rule and run the container:
 
     $ docker run \
         -p 8095:8095 \
-        jleight/atlassian-crowd
+        gizmochief7/atlassian-crowd
 
 Usage
 -----
@@ -35,7 +35,7 @@ A data container can be created by running the following command:
 
     $ docker create \
         --name crowd-data \
-        jleight/atlassian-crowd
+        gizmochief7/atlassian-crowd
 
 The application container can then be started by running:
 
@@ -43,7 +43,7 @@ The application container can then be started by running:
         --name crowd \
         --volumes-from crowd-data \
         -p 8095:8095 \
-        jleight/atlassian-crowd
+        gizmochief7/atlassian-crowd
 
 ### Reverse Proxy
 
@@ -65,7 +65,7 @@ https://example.com/crowd, you would use the following command:
         -p 8095:8095 \
         -e TC_PROXYNAME=example.com \
         -e TC_PROXYPORT=443 \
-        jleight/atlassian-crowd
+        gizmochief7/atlassian-crowd
 
 Once your proxy server is configured, Atlassian Crowd® should be accessible at
 https://example.com/crowd.
